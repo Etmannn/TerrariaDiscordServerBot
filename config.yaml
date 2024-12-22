@@ -7,7 +7,6 @@ prefix: "t!"
 
 # Change this to the name of your start.bat file
 # Example: startserver.bat
-# Make Sure to use forward slashes
 serverdir: ""
 
 # Set this to true of false depending on whether you are using playit.gg to run your server
