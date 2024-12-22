@@ -1,0 +1,20 @@
+# place both the bot and the config file into the same folder as your start.bat file
+
+# This is the letters, numbers and/or symbols you type to declare a command.
+# Default is t!.
+# Example: t!start. The prefix is t! and the command is start.
+prefix: "t!"
+
+# Change this to the name of your start.bat file
+# Example: startserver.bat
+# Make Sure to use forward slashes
+serverdir: ""
+
+# Set this to true of false depending on whether you are using playit.gg to run your server
+playit: ""
+
+# Add your Discord Bot token.
+# To get a token follow this tutorial: https://youtu.be/ic5GuP-uHcg
+# To invite the bot to your server go to the OAuth2 Tab on your discord bot then tick the 'bot' box under scopes,
+# and 'send messages' under permissions. Finally copy the link at the bottom into a browser.
+token: ""
