@@ -1,4 +1,4 @@
-# Minecraft Discord Bot by Ethan Cleminson | 10/2/2024
+# Terraria Discord Bot by Ethan Cleminson | 22/12/2024
 # Packages used in program
 
 import discord
@@ -48,7 +48,7 @@ async def ping(ctx):
     if online is False:
         await ctx.send("Server is Offline")
 
-# A command to start the Minecraft server
+# A command to start the Terraria server
 # If the server is already online it will inform the user
 @bot.command()
 async def start(ctx):
@@ -67,7 +67,7 @@ async def start(ctx):
             if checkstat is True:
                 await ctx.send("Server Online!")
                 checking = False
-# A command to stop the Minecraft server
+# A command to stop the Terraria server
 #
 @bot.command()
 async def stop(ctx):
@@ -80,7 +80,7 @@ async def stop(ctx):
     else:
         await ctx.send("Sever already Offline")
 
-# A command to restart the Minecraft server
+# A command to restart the Terraria server
 @bot.command()
 async def restart(ctx):
     online = serverping()
