@@ -37,7 +37,8 @@ def serverping():
 async def on_ready():
     print("Bot successfully logged in")
     await bot.change_presence(activity=discord.Activity(
-        type=discord.ActivityType.listening, name=f"{config['prefix']}help"))
+        type=discord.ActivityType.listening, name=f"/help"))
+    await bot.tree.sync()
 
 
 # A command to check if the server is online
@@ -100,19 +101,19 @@ async def restart(interaction: discord.Interaction):
 async def help(interaction: discord.Interaction):
     helpembed = discord.Embed(title="Commands", color=0x55FF55)
 
-    helpembed.add_field(name=f"{config['prefix']}ping",
+    helpembed.add_field(name=f"/ping",
                         value="Returns whether or not the server is online",
                         inline=False)
-    helpembed.add_field(name=f"{config['prefix']}start",
+    helpembed.add_field(name=f"/start",
                         value="Starts the Terraria server",
                         inline=False)
-    helpembed.add_field(name=f"{config['prefix']}stop",
+    helpembed.add_field(name=f"/stop",
                         value="Stops the Terraria server",
                         inline=False)
-    helpembed.add_field(name=f"{config['prefix']}restart",
+    helpembed.add_field(name=f"/restart",
                         value="Restarts the Terraria server",
                         inline=False)
-    helpembed.add_field(name=f"{config['prefix']}help",
+    helpembed.add_field(name=f"/help",
                         value="Shows this help menu",
                         inline=False)
 
